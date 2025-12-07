@@ -1,0 +1,28 @@
+:root {
+  /* Deep Space Colors */
+  --color-bg: #050505;
+  --color-bg-alt: #0a0a12;
+  --color-text: #e0e0e0;
+  --color-text-muted: #a0a0a0;
+
+  /* Accents */
+  --color-primary: #6d28d9; /* Deep Purple */
+  --color-secondary: #0ea5e9; /* Sky Blue */
+  --color-accent: #10b981; /* Emerald Green */
+  --color-neon-purple: #d946ef;
+  --color-neon-blue: #3b82f6;
+
+  /* Fonts */
+  --font-header: 'Press Start 2P', cursive;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Borders */
+  --border-pixel: 2px solid var(--color-text-muted);
+  --border-radius-sm: 4px;
+}
