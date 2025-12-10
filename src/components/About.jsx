@@ -14,11 +14,11 @@ const About = () => {
             >
                 <h2 className={styles.title}>ABOUT_ME</h2>
                 <div className={styles.content}>
-                    {/* <p>
+                    <p>
                         I am a creative developer obsessed with the intersection of design and technology.
                         My mission is to build digital experiences that defy gravity—lightweight,
                         performant, and visually stunning.
-                    </p> */}
+                    </p>
                     <p>
                         With a background in full-stack development and a passion for pixel art,
                         I craft interfaces that feel both retro and futuristic.
