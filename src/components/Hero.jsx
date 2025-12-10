@@ -28,40 +28,40 @@ const Hero = () => {
                         I specialize in building exceptional digital experiences. Currently, I'm focused on creating accessible, human-centered products.
                     </motion.p>
 
-                    <motion.div
+                    {/* <motion.div
                         className={styles.actions}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.4 }}
+                    > */}
+                    <a
+                        href="/resume.pdf"
+                        className={styles.resumeBtn}
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        <a
-                            href="/resume.pdf"
-                            className={styles.resumeBtn}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Download size={20} />
-                            Download Resume
-                        </a>
+                        <Download size={20} />
+                        Download Resume
+                    </a>
 
-                        <div className={styles.socialLinks}>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="GitHub">
-                                <Github size={24} />
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="LinkedIn">
-                                <Linkedin size={24} />
-                            </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Twitter">
-                                <Twitter size={24} />
-                            </a>
-                            <a href="mailto:email@example.com" className={styles.socialIcon} aria-label="Email">
-                                <Mail size={24} />
-                            </a>
-                        </div>
-                    </motion.div>
-                </div>
+                    <div className={styles.socialLinks}>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="GitHub">
+                            <Github size={24} />
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="LinkedIn">
+                            <Linkedin size={24} />
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Twitter">
+                            <Twitter size={24} />
+                        </a>
+                        <a href="mailto:email@example.com" className={styles.socialIcon} aria-label="Email">
+                            <Mail size={24} />
+                        </a>
+                    </div>
+                </motion.div>
             </div>
-        </section>
+        </div>
+        </section >
     );
 };
 
