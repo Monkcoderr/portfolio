@@ -23,8 +23,8 @@ h6 {
     font-family: var(--font-header);
     color: var(--color-text);
     margin-bottom: var(--spacing-md);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
 }
 
 a {

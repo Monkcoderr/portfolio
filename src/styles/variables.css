@@ -1,20 +1,28 @@
 :root {
-  /* Deep Space Colors */
-  --color-bg: #050505;
-  --color-bg-alt: #0a0a12;
-  --color-text: #e0e0e0;
-  --color-text-muted: #a0a0a0;
+  /* Premium Dark Theme */
+  --color-bg: #09090b;
+  /* Zinc 950 */
+  --color-bg-alt: #18181b;
+  /* Zinc 900 */
+  --color-card: rgba(24, 24, 27, 0.5);
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-text: #fafafa;
+  /* Zinc 50 */
+  --color-text-muted: #a1a1aa;
+  /* Zinc 400 */
 
-  /* Accents */
-  --color-primary: #6d28d9; /* Deep Purple */
-  --color-secondary: #0ea5e9; /* Sky Blue */
-  --color-accent: #10b981; /* Emerald Green */
-  --color-neon-purple: #d946ef;
-  --color-neon-blue: #3b82f6;
+  /* Accents - High End Gradients */
+  --color-primary: #3b82f6;
+  /* Blue 500 */
+  --color-secondary: #8b5cf6;
+  /* Violet 500 */
+  --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  --gradient-text: linear-gradient(135deg, #60a5fa 0%, #c084fc 100%);
 
   /* Fonts */
-  --font-header: 'Press Start 2P', cursive;
-  --font-body: 'Inter', sans-serif;
+  --font-header: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 
   /* Spacing */
   --spacing-sm: 0.5rem;
@@ -22,7 +30,16 @@
   --spacing-lg: 2rem;
   --spacing-xl: 4rem;
 
-  /* Borders */
-  --border-pixel: 2px solid var(--color-text-muted);
-  --border-radius-sm: 4px;
+  /* UI Elements */
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 0.75rem;
+  --border-radius-lg: 1rem;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.15);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(9, 9, 11, 0.7);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+  --backdrop-blur: blur(12px);
 }

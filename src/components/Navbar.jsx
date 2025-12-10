@@ -1,22 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Navbar.module.css';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
     const navLinks = [
-        { name: 'About', href: '#about' },
-        { name: 'Skills', href: '#skills' },
-        { name: 'Experience', href: '#experience' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Profile', href: '#about' },
+        // { name: 'Projects', href: '#projects' }, // Keeping hidden for now until redesigned
+        // { name: 'Contact', href: '#contact' },
     ];
 
     return (
-        <nav className={styles.navbar}>
+        <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
             <div className={styles.logo}>PORTFOLIO</div>
 
             <div className={`${styles.links} ${isOpen ? styles.open : ''}`}>
@@ -27,9 +34,11 @@ const Navbar = () => {
                 ))}
             </div>
 
+            {/* Hidden for single-view focus
             <button className={styles.menuButton} onClick={toggleMenu}>
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            </button> 
+            */}
         </nav>
     );
 };

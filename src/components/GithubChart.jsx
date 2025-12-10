@@ -23,12 +23,7 @@ const GithubChart = () => {
         <section className={styles.github}>
             <h2 className={styles.title}>GITHUB_ACTIVITY</h2>
             <div className={styles.terminal}>
-                <div className={styles.header}>
-                    <span className={styles.dot}></span>
-                    <span className={styles.dot}></span>
-                    <span className={styles.dot}></span>
-                    <span className={styles.terminalTitle}>user@portfolio:~/contributions</span>
-                </div>
+                {/* Header removed for Bento Clean Look */}
                 <div className={styles.chartContainer}>
                     <div className={styles.chart}>
                         {data.map((level, index) => (

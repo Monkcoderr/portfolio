@@ -1,83 +1,60 @@
 .github {
-    padding: var(--spacing-xl) var(--spacing-lg);
-    background-color: var(--color-bg-alt);
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
-    text-align: center;
-    color: var(--color-accent);
-    text-shadow: 2px 2px 0px var(--color-neon-purple);
-    margin-bottom: var(--spacing-xl);
+    display: none;
+    /* Hide default title, handled by BentoCard */
 }
 
 .terminal {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #0d1117;
-    border: 2px solid var(--color-text-muted);
-    border-radius: var(--border-radius-sm);
-    box-shadow: 8px 8px 0px var(--color-text-muted);
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* Remove terminal bg, rely on card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-md);
 }
 
 .header {
-    background-color: #161b22;
-    padding: var(--spacing-sm) var(--spacing-md);
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    border-bottom: 1px solid var(--color-text-muted);
+    display: none;
+    /* Remove fake terminal header */
 }
 
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: var(--color-text-muted);
-}
-
-.dot:nth-child(1) {
-    background-color: #ff5f56;
-}
-
-.dot:nth-child(2) {
-    background-color: #ffbd2e;
-}
-
-.dot:nth-child(3) {
-    background-color: #27c93f;
-}
-
-.terminalTitle {
-    font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
-    color: var(--color-text-muted);
-    margin-left: var(--spacing-sm);
-}
-
+/* Make chart fit container */
 .chartContainer {
-    padding: var(--spacing-lg);
+    width: 100%;
     overflow-x: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .chart {
     display: grid;
     grid-template-columns: repeat(52, 1fr);
     gap: 3px;
-    width: max-content;
+    width: fit-content;
 }
 
 .cell {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Default empty */
 }
 
 .stats {
-    padding: var(--spacing-md);
+    margin-top: var(--spacing-md);
     color: var(--color-text-muted);
-    font-family: var(--font-header);
     font-size: 0.8rem;
-    text-align: right;
-    border-top: 1px solid #30363d;
+    font-family: var(--font-mono);
 }

@@ -1,0 +1,154 @@
+.introCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.introTop {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.role {
+    font-size: 1rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.bio {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-top: 1rem;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin: 0.5rem 0;
+}
+
+/* Social Row & Buttons */
+.socialRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+    width: 100%;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.miniBtn,
+.miniIconBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.miniIconBtn {
+    padding: 0.4rem;
+}
+
+.miniBtn:hover,
+.miniIconBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--color-text);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+/* Other Cards */
+.skillList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skillBadge {
+    padding: 0.25rem 0.6rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.experienceList,
+.company,
+.projectDesc {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.testimonial {
+    font-style: italic;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.blogItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.blogTitle {
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.date {
+    font-family: var(--font-mono);
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+}
+
+.chartCard {
+    padding: 0 !important;
+    display: block !important;
+    overflow: hidden;
+}
