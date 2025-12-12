@@ -3,12 +3,12 @@ import styles from './Experience.module.css';
 import { motion } from 'framer-motion';
 
 const experiences = [
-    {
-        role: 'Senior Frontend Engineer',
-        company: 'TechNova',
-        period: '2023 - Present',
-        description: 'Leading the development of next-gen web applications using React and WebGL.',
-    },
+    // {
+    //     role: 'Senior Frontend Engineer',
+    //     company: 'TechNova',
+    //     period: '2023 - Present',
+    //     description: 'Leading the development of next-gen web applications using React and WebGL.',
+    // },
     {
         role: 'Full Stack Developer',
         company: 'PixelForge',
