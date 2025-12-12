@@ -3,14 +3,14 @@ import styles from './Skills.module.css';
 import { motion } from 'framer-motion';
 import { Code, Database, Layout, Server, Terminal, Cpu } from 'lucide-react';
 
-// const skills = [
-//     { name: 'React', icon: <Code />, level: 90 },
-//     { name: 'Node.js', icon: <Server />, level: 85 },
-//     { name: 'CSS/Sass', icon: <Layout />, level: 95 },
-//     { name: 'SQL', icon: <Database />, level: 80 },
-//     { name: 'Git', icon: <Terminal />, level: 90 },
-//     { name: 'System Design', icon: <Cpu />, level: 75 },
-// ];
+const skills = [
+    { name: 'React', icon: <Code />, level: 90 },
+    { name: 'Node.js', icon: <Server />, level: 85 },
+    { name: 'CSS/Sass', icon: <Layout />, level: 95 },
+    { name: 'SQL', icon: <Database />, level: 80 },
+    { name: 'Git', icon: <Terminal />, level: 90 },
+    { name: 'System Design', icon: <Cpu />, level: 75 },
+];
 
 const Skills = () => {
     return (
