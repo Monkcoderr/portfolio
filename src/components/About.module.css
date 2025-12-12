@@ -4,14 +4,14 @@
     position: relative;
 }
 
-/* .container {
+.container {
     max-width: 800px;
     margin: 0 auto;
     border: var(--border-pixel);
     padding: var(--spacing-lg);
     background-color: var(--color-bg);
     box-shadow: 8px 8px 0px var(--color-text-muted);
-} */
+}
 
 .title {
     color: var(--color-secondary);
